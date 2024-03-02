@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+
+# Fichiers générés pendant l'exécution
+*.log
+*.lock
+*.sqlite
+*.sqlite3
+
+# Fichiers de configuration
+.env
+
+# Dossiers spécifiques à certains outils
+coverage/
+dist/
+tmp/
+logs/

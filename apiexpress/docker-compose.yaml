@@ -1,0 +1,16 @@
+version: '3'
+services:
+  node-app:
+    image: apiexpress:2.1.4
+    ports:
+      - 3002:3002
+    environment:
+      - HOSTDB=mongodb
+      - DBPORT=27017
+    depends_on:
+      - mongodb 
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports: 
+      - 27017:27017
